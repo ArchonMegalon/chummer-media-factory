@@ -20,3 +20,9 @@ This repo must not own:
 - narrative generation policy
 
 Current status: scaffold-stage bootstrap. Contract-plane and render-only DTO extraction are still in progress.
+
+Bootstrap layout:
+
+- `Chummer.Media.Factory.slnx` is the repo solution entrypoint
+- `src/Chummer.Media.Contracts` is the canonical render-only package plane scaffold
+- `scripts/ai/verify.sh` restores and builds the bootstrap in isolation
