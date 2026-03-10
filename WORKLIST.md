@@ -10,6 +10,7 @@
 - [completed] EXTRACT-002 Add queue/asset lifecycle invariants doc covering dedupe key/scope ownership, retry timing, and approval/persist/reject terminal-state expectations.
 - [completed] EXTRACT-003 Add executable backlog slice for asset kernel completion (manifest persistence wiring, binary storage adapter seam, preview linkage, TTL/retention sweep contract, lineage traversal contract).
 - [completed] EXTRACT-004 Define renderer move-in sequence after asset kernel completion: deterministic documents first, portraits second, video third, with dependency gates per stage.
+- [completed] EXTRACT-005 Capture scaffold-stage exit criteria check that proves run-services no longer owns the effective media seam for render-only jobs and asset lifecycle.
 
 ## Milestone coverage map
 
@@ -23,6 +24,7 @@
 - EXTRACT-002: queue/asset lifecycle invariants documented for dedupe key/scope ownership, retry timing, and approval/persist/reject terminal-state expectations. Status: completed.
 - EXTRACT-003: executable asset-kernel completion slice added for manifest persistence wiring, binary storage adapter seam, preview linkage, TTL/retention sweep contract, and lineage traversal contract. Status: completed.
 - EXTRACT-004: renderer move-in sequence documented with ordered stage gates: deterministic documents first, portraits second, and video third after dependency checks. Status: completed.
+- EXTRACT-005: scaffold-stage exit criteria check captured with pass/fail evidence gates proving run-services no longer owns render-job and asset-lifecycle seam semantics. Status: completed.
 
 ## Queue truth
 
