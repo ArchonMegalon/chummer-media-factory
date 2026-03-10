@@ -21,5 +21,19 @@ bash scripts/ai/contract-boundary-tests.sh
 
 dotnet restore Chummer.Media.Factory.slnx --nologo --verbosity quiet
 dotnet build Chummer.Media.Factory.slnx --no-restore --configuration Release --nologo --verbosity quiet
+pack_output_dir="$(mktemp -d "${TMPDIR:-/tmp}/chummer-media-contracts-pack.XXXXXX")"
+trap 'rm -rf "$pack_output_dir"' EXIT
+
+dotnet pack src/Chummer.Media.Contracts/Chummer.Media.Contracts.csproj \
+  --no-restore \
+  --configuration Release \
+  --output "$pack_output_dir" \
+  --nologo \
+  --verbosity quiet
+
+if ! find "$pack_output_dir" -maxdepth 1 -type f -name "*.nupkg" -print -quit | grep -q .; then
+  echo "verify failed: dotnet pack produced no .nupkg artifact"
+  exit 1
+fi
 
 echo "verify ok"
