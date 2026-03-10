@@ -17,25 +17,29 @@
 
 ## Milestone coverage map
 
-- MF-001: repo bootstrap and isolated verify path. Status: completed.
-- MF-002: canonical render-only `Chummer.Media.Contracts` package plane. Status: completed.
-- MF-003: DTO boundary split between render/job/asset lifecycle and upstream narrative/delivery/orchestration. Status: completed.
-- MF-004: asset kernel contract seed for manifests, catalog, queue, dedupe, retry, approval/persist/reject lifecycle coverage. Status: completed.
-- MF-005: cross-service boundary documentation with `chummer.run-services`, `hub-registry`, `presentation`, and `play`. Status: completed.
-- MF-006: queue truth materialization for scaffold-stage extraction scope and auditor findings. Status: completed.
-- EXTRACT-001: package metadata + namespace policy finalized for `Chummer.Media.Contracts`; no narrative-authoring or campaign/session DTOs in repo contracts. Status: completed.
-- EXTRACT-002: queue/asset lifecycle invariants documented for dedupe key/scope ownership, retry timing, and approval/persist/reject terminal-state expectations. Status: completed.
-- EXTRACT-003: executable asset-kernel completion slice added for manifest persistence wiring, binary storage adapter seam, preview linkage, TTL/retention sweep contract, and lineage traversal contract. Status: completed.
-- EXTRACT-004: renderer move-in sequence documented with ordered stage gates: deterministic documents first, portraits second, and video third after dependency checks. Status: completed.
-- EXTRACT-005: scaffold-stage exit criteria check captured with pass/fail evidence gates proving run-services no longer owns render-job and asset-lifecycle seam semantics. Status: completed.
-- EXTRACT-007: runnable shared asset-kernel implementation backlog published with execution tasks AK-01..AK-06 and evidence gates before renderer move-in completion. Status: completed.
-- EXTRACT-008: runnable DTO split boundary backlog published with execution tasks DS-01..DS-05 and verification gates for render-only contract ownership. Status: completed.
-- EXTRACT-006: runnable seam cutover backlog published to enforce live-boundary acceptance evidence, run-services handoff conformance, and rehearsal-gated cutover before renderer migration completion. Status: queued.
+- Milestone coverage snapshot date: 2026-03-10.
+- MF-001: repo bootstrap and isolated verify path. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-09 (met). ETA confidence: high. Blockers: none.
+- MF-002: canonical render-only `Chummer.Media.Contracts` package plane. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-09 (met). ETA confidence: high. Blockers: none.
+- MF-003: DTO boundary split between render/job/asset lifecycle and upstream narrative/delivery/orchestration. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-09 (met). ETA confidence: high. Blockers: none.
+- MF-004: asset kernel contract seed for manifests, catalog, queue, dedupe, retry, approval/persist/reject lifecycle coverage. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-09 (met). ETA confidence: high. Blockers: none.
+- MF-005: cross-service boundary documentation with `chummer.run-services`, `hub-registry`, `presentation`, and `play`. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-09 (met). ETA confidence: high. Blockers: none.
+- MF-006: queue truth materialization for scaffold-stage extraction scope and auditor findings. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-10 (met). ETA confidence: high. Blockers: none.
+- EXTRACT-001: package metadata + namespace policy finalized for `Chummer.Media.Contracts`; no narrative-authoring or campaign/session DTOs in repo contracts. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-10 (met). ETA confidence: high. Blockers: none.
+- EXTRACT-002: queue/asset lifecycle invariants documented for dedupe key/scope ownership, retry timing, and approval/persist/reject terminal-state expectations. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-10 (met). ETA confidence: high. Blockers: none.
+- EXTRACT-003: executable asset-kernel completion slice added for manifest persistence wiring, binary storage adapter seam, preview linkage, TTL/retention sweep contract, and lineage traversal contract. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-10 (met). ETA confidence: high. Blockers: none.
+- EXTRACT-004: renderer move-in sequence documented with ordered stage gates: deterministic documents first, portraits second, and video third after dependency checks. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-10 (met). ETA confidence: high. Blockers: none.
+- EXTRACT-005: scaffold-stage exit criteria check captured with pass/fail evidence gates proving run-services no longer owns render-job and asset-lifecycle seam semantics. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-10 (met). ETA confidence: high. Blockers: none.
+- EXTRACT-007: runnable shared asset-kernel implementation backlog published with execution tasks AK-01..AK-06 and evidence gates before renderer move-in completion. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-10 (met). ETA confidence: high. Blockers: none.
+- EXTRACT-008: runnable DTO split boundary backlog published with execution tasks DS-01..DS-05 and verification gates for render-only contract ownership. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-10 (met). ETA confidence: high. Blockers: none.
+- EXTRACT-006: runnable seam cutover backlog published to enforce live-boundary acceptance evidence, run-services handoff conformance, and rehearsal-gated cutover before renderer migration completion. Owner: media-factory with run-services dependency. Status: queued. Completion: 15%. ETA target date: 2026-03-24. ETA confidence: medium. Blockers: run-services cutover rehearsal windows are not yet confirmed; live-boundary acceptance evidence cannot be finalized until ingress/egress handoff checks are executed.
 
 ## Queue truth
 
 - Runtime queue source of truth: `.codex-studio/published/QUEUE.generated.yaml`.
 - Queue normalization is in progress; generic auditor prompts are being replaced with extraction-scoped runnable backlog entries.
+- Auditor canonical package-plane uncovered-scope slice (`project.uncovered_scope` and `project.queue_exhausted_with_uncovered_scope`, candidates `22418` and `22422`, published `2026-03-09` and `2026-03-10`) is mapped to `EXTRACT-001` and should remain closed as duplicate generic scope.
 - Auditor asset-kernel uncovered-scope slice (`project.uncovered_scope`, candidate `22420`, published `2026-03-09` and `2026-03-10`) is mapped to `EXTRACT-007` (AK-01..AK-06) and should not be re-queued as a duplicate generic prompt.
 - Auditor DTO split uncovered-scope slice (`project.uncovered_scope` and `project.queue_exhausted_with_uncovered_scope`, candidates `22419` and `22423`, published `2026-03-09` and `2026-03-10`) is mapped to `EXTRACT-008` (DS-01..DS-05) and should not remain as a duplicate generic prompt.
+- Auditor seam-ownership uncovered-scope slice (`project.uncovered_scope` and `project.queue_exhausted_with_uncovered_scope`, candidates `22421` and `22425`, published `2026-03-09` and `2026-03-10`) is mapped to `EXTRACT-006` and should remain queued until live cutover evidence is complete.
+- Auditor milestone-coverage incomplete slice (`project.milestone_coverage_incomplete`, candidate `22426`, published `2026-03-09` and `2026-03-10`) is satisfied by this explicit coverage map update with completion %, ETA date, confidence, and blockers.
 - Remaining uncovered scope at scaffold stage is being converted into runnable extraction and documentation work from generic auditor prompts.
