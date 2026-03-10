@@ -25,3 +25,4 @@ Establish criterion-level seam acceptance status proving `chummer-media-factory`
 `SEAM-01-C3` must emit one owner-scoped queue follow-on under `EXTRACT-006/SEAM-01B` with:
 - next action: execute retention sweep and purge transition rehearsal in run-services handoff window
 - evidence target: rehearsal artifact for retention checks in `docs/EXTRACT-006-SEAM-03-cutover-rehearsal-checklist.md`
+- queue item: `EXTRACT-006/SEAM-01B/C3` in `.codex-studio/published/QUEUE.generated.yaml`
