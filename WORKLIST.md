@@ -21,6 +21,7 @@
 - [completed] EXTRACT-001A/CP-03 Normalize queue/worklist mapping for auditor candidates `22418` and `22422` so package-plane prompts reference runnable `EXTRACT-001A` tasks instead of generic uncovered-scope text.
 - [completed] EXTRACT-006 Execute run-services seam cutover backlog (`SEAM-01`..`SEAM-04`) to convert scaffold-stage seam ownership checks into live boundary acceptance evidence and handoff conformance.
 - [completed] EXTRACT-006/SEAM-01A..SEAM-03B Publish runnable seam sub-backlog for pending ownership proof: acceptance contract artifact, queue follow-on wiring, rehearsal checklist artifact, and rehearsal execution window run.
+- [completed] DESIGN-SYNC-001 Sync approved Chummer design bundle into `.codex-design/` and refresh media-factory-local review context with explicit render-only boundary, lifecycle P1 checks, and uncovered-scope queue normalization guidance.
 
 ## Milestone coverage map
 
@@ -71,3 +72,4 @@
 - Auditor milestone-coverage incomplete slice (`project.milestone_coverage_incomplete`, candidate `22426`, published `2026-03-09`, `2026-03-10T08:27:09`, `2026-03-10T08:48:19`, `2026-03-10T09:54:58`, and `2026-03-10T11:13:44`) is satisfied by this explicit coverage map update with completion %, ETA date, confidence, and blockers.
 - Runtime queue was drained after SEAM-03B and duplicate-prompt normalization; `.codex-studio/published/QUEUE.generated.yaml` now carries no active items.
 - Remaining uncovered scope at scaffold stage is being converted into runnable extraction and documentation work from generic auditor prompts.
+- Design bundle sync slice from `.codex-studio/published/QUEUE.generated.yaml` (`Sync the approved Chummer design bundle into \`media-factory\` under \`.codex-design/\` and refresh repo-local review context.`) is completed by mirrored product bundle refresh plus media-factory-specific review-context rewrite on `2026-03-10`; no follow-on queue item required.
