@@ -1,7 +1,5 @@
 mode: prepend
 items:
-- Publish or append runnable backlog for The asset kernel still needs manifests, binary storage, render jobs, previews, TTL, retention, and lineage before renderer-specific pipelines move here..
-- Add milestone mapping or executable queue work for The asset kernel still needs manifests, binary storage, render jobs, previews, TTL, retention, and lineage before renderer-specific pipelines move here..
 - Publish or append runnable backlog for Media DTOs still need to be split cleanly between downstream render/job/asset lifecycle contracts and upstream narrative-authoring, delivery, and campaign-context contracts..
 - Add milestone mapping or executable queue work for Media DTOs still need to be split cleanly between downstream render/job/asset lifecycle contracts and upstream narrative-authoring, delivery, and campaign-context contracts..
 - Finish milestone coverage modeling for media-factory so ETA and completion truth are no longer partial.
