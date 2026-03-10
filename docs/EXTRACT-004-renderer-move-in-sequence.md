@@ -77,6 +77,14 @@ For every stage (R1-R3), block move-in if either occurs:
 - DTOs or executor inputs introduce narrative drafting, canon generation, rules math, or session relay payloads
 - contracts or abstractions leak provider SDK types, engine/runtime internals, or UI-kit dependencies
 
+## Seam gate enforcement
+
+Renderer move-in completion for all stages (R1-R3) is additionally gated by:
+
+- `docs/EXTRACT-006-SEAM-04-renderer-move-in-gate.md`
+
+No stage may be marked complete if seam evidence is failing, missing, stale, or regressed.
+
 ## Completion condition for EXTRACT-004
 
 This slice is complete when this sequence and gate set is present in repo-local planning artifacts and can be used to order executable renderer extraction work without ambiguity.

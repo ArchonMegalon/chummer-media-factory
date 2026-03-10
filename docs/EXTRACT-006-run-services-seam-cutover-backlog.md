@@ -22,6 +22,7 @@ Execute the scaffold-to-live seam cutover so `chummer-media-factory` becomes the
 4. SEAM-04 Gate renderer move-in on seam evidence
 - Require EXTRACT-006 evidence completion before any document/portrait/video execution migration is marked done.
 - Keep renderer migration blocked if seam ownership checks regress.
+- Evidence: `docs/EXTRACT-006-SEAM-04-renderer-move-in-gate.md`
 
 ## Completion evidence
 

@@ -14,7 +14,7 @@
 - [completed] EXTRACT-007 Publish runnable asset-kernel implementation backlog (AK-01..AK-06) for manifests, binary storage, render jobs, previews, TTL/retention, and lineage with explicit evidence gates.
 - [completed] EXTRACT-008 Publish runnable DTO boundary split backlog (DS-01..DS-05) to keep `Chummer.Media.Contracts` render-only and move narrative/delivery/campaign-context concerns upstream.
 - [completed] EXTRACT-006/SEAM-02 Publish run-services handoff conformance matrix with required ingress payloads and forbidden ownership paths (provider execution, lifecycle mutation authority, queue semantics).
-- [queued] EXTRACT-006 Execute run-services seam cutover backlog (`SEAM-01`..`SEAM-04`) to convert scaffold-stage seam ownership checks into live boundary acceptance evidence and handoff conformance.
+- [queued] EXTRACT-006 Execute run-services seam cutover backlog (`SEAM-01`..`SEAM-04`) to convert scaffold-stage seam ownership checks into live boundary acceptance evidence and handoff conformance. (`SEAM-02` and `SEAM-04` completed; `SEAM-01` and `SEAM-03` pending)
 
 ## Milestone coverage map
 
@@ -32,7 +32,7 @@
 - EXTRACT-005: scaffold-stage exit criteria check captured with pass/fail evidence gates proving run-services no longer owns render-job and asset-lifecycle seam semantics. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-10 (met). ETA confidence: high. Blockers: none.
 - EXTRACT-007: runnable shared asset-kernel implementation backlog published with execution tasks AK-01..AK-06 and evidence gates before renderer move-in completion. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-10 (met). ETA confidence: high. Blockers: none.
 - EXTRACT-008: runnable DTO split boundary backlog published with execution tasks DS-01..DS-05 and verification gates for render-only contract ownership. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-10 (met). ETA confidence: high. Blockers: none.
-- EXTRACT-006: runnable seam cutover backlog published to enforce live-boundary acceptance evidence, run-services handoff conformance, and rehearsal-gated cutover before renderer migration completion. Execution units: `SEAM-01` acceptance contract, `SEAM-02` handoff matrix (completed 2026-03-10), `SEAM-03` rehearsal checklist, `SEAM-04` renderer gate enforcement. Owner: media-factory with run-services dependency. Status: queued. Completion: 35%. ETA target date: 2026-03-24. ETA confidence: medium. Blockers: run-services cutover rehearsal windows are not yet confirmed; live-boundary acceptance evidence cannot be finalized until ingress/egress handoff checks are executed.
+- EXTRACT-006: runnable seam cutover backlog published to enforce live-boundary acceptance evidence, run-services handoff conformance, and rehearsal-gated cutover before renderer migration completion. Execution units: `SEAM-01` acceptance contract, `SEAM-02` handoff matrix (completed 2026-03-10), `SEAM-03` rehearsal checklist, `SEAM-04` renderer gate enforcement (completed 2026-03-10; evidence: `docs/EXTRACT-006-SEAM-04-renderer-move-in-gate.md`). Owner: media-factory with run-services dependency. Status: queued. Completion: 55%. ETA target date: 2026-03-24. ETA confidence: medium. Blockers: run-services cutover rehearsal windows are not yet confirmed; live-boundary acceptance evidence cannot be finalized until ingress/egress handoff checks are executed.
 
 ## Queue truth
 
