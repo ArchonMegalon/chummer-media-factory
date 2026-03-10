@@ -26,3 +26,16 @@ Bootstrap layout:
 - `Chummer.Media.Factory.slnx` is the repo solution entrypoint
 - `src/Chummer.Media.Contracts` is the canonical render-only package plane scaffold
 - `scripts/ai/verify.sh` restores and builds the bootstrap in isolation
+
+`Chummer.Media.Contracts` now owns only three contract families:
+
+- rendering requests for deterministic document, portrait, and video execution
+- render job queue state for claim, dedupe, retry, and completion tracking
+- asset manifests, catalog entries, and lifecycle state for approval, persistence, TTL, and lineage
+
+Ownership details seeded in the current scaffold:
+
+- queue-owned render jobs define queue name, dedupe scope/key, retry timing, and supersession
+- asset manifests own storage lineage while catalog entries own lookup metadata for approved render outputs
+
+The package does not define narrative briefs, canon decisions, routing policy, delivery policy, or campaign/session orchestration contracts. Those remain upstream in `chummer.run-services`.
