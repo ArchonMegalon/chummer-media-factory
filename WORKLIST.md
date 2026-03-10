@@ -4,7 +4,7 @@
 - [completed] MF-002 Define `Chummer.Media.Contracts` as render-only contract families.
 - [completed] MF-003 Split current media contracts into render/job/asset lifecycle vs narrative-authoring concerns.
 - [completed] MF-004 Seed asset catalog, job queue, dedupe, and retry ownership boundaries.
-- [queued] MF-005 Document service boundaries with `run-services`, `hub-registry`, `presentation`, and `play`.
+- [completed] MF-005 Document service boundaries with `run-services`, `hub-registry`, `presentation`, and `play`.
 - [completed] MF-006 Materialize milestone coverage for scaffold-stage extraction and queue truth.
 
 ## Milestone coverage map
@@ -13,7 +13,7 @@
 - MF-002: canonical render-only `Chummer.Media.Contracts` package plane. Status: completed.
 - MF-003: DTO boundary split between render/job/asset lifecycle and upstream narrative/delivery/orchestration. Status: completed.
 - MF-004: asset kernel contract seed for manifests, catalog, queue, dedupe, retry, approval/persist/reject lifecycle coverage. Status: completed.
-- MF-005: cross-service boundary documentation with `chummer.run-services`, `hub-registry`, `presentation`, and `play`. Status: queued.
+- MF-005: cross-service boundary documentation with `chummer.run-services`, `hub-registry`, `presentation`, and `play`. Status: completed.
 - MF-006: queue truth materialization for scaffold-stage extraction scope and auditor findings. Status: completed.
 
 ## Queue truth

@@ -26,6 +26,7 @@ Bootstrap layout:
 - `Chummer.Media.Factory.slnx` is the repo solution entrypoint
 - `src/Chummer.Media.Contracts` is the canonical render-only package plane scaffold
 - `scripts/ai/verify.sh` restores and builds the bootstrap in isolation
+- `docs/MF-005-service-seams-and-handoffs.md` defines cross-service seam ownership and extraction checklist coverage
 
 `Chummer.Media.Contracts` now owns only three contract families:
 
