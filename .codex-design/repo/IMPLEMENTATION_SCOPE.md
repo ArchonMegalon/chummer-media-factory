@@ -47,3 +47,49 @@
 
 If the feature is about rendering, previews, manifests, or asset lifecycle, it belongs here.
 If it is about campaign meaning, approvals, delivery, or rules truth, it does not.
+
+
+## External media integrations scope
+
+`chummer-media-factory` is the only repo allowed to own media/render/archive adapters.
+
+### Owns
+
+* `IDocumentRenderAdapter`
+* `IPreviewRenderAdapter`
+* `IImageRenderAdapter`
+* `IVideoRenderAdapter`
+* `IRouteRenderAdapter`
+* `IArchiveAdapter`
+* media provider receipts
+* media provider provenance
+* media safety/moderation result capture
+* media archive execution
+* media retention/archive policy execution
+
+### Initial vendor mapping
+
+* MarkupGo - document-render adapter
+* PeekShot - preview/thumbnail/share-card adapter
+* Mootion - bounded video adapter
+* AvoMap - route-render adapter
+* Internxt - cold-archive adapter
+* optional 1min.AI / AI Magicx image assistance only when wrapped behind media-factory adapters and governed by provenance rules
+
+### Must not own
+
+* campaign/session meaning
+* approval policy
+* canon policy
+* registry publication
+* client UX
+* general AI orchestration
+
+### Required design rules
+
+* every media job produces a Chummer manifest
+* provider outputs are never the canonical asset record alone
+* previews and thumbnails are linked assets
+* archive providers are never the hot path
+* provider choice is adapter-private and switchable
+
