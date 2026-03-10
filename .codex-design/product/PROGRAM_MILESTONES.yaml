@@ -93,3 +93,7 @@ groups:
       worklist_id: WL-D008
       objective: Publish approved design mirror subsets into each code repo for worker execution and GitHub review against repo-local canon.
       status: queued
+    - milestone_id: P4
+      worklist_id: WL-D009
+      objective: Keep ownership matrix, contract canon, blockers, and milestone truth current throughout the split wave with dated maintenance updates.
+      status: queued

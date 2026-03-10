@@ -8,6 +8,7 @@
 - [completed] MF-006 Materialize milestone coverage for scaffold-stage extraction and queue truth.
 - [completed] EXTRACT-001 Finalize `Chummer.Media.Contracts` package metadata and namespace policy; verify render-only DTO boundaries.
 - [completed] EXTRACT-002 Add queue/asset lifecycle invariants doc covering dedupe key/scope ownership, retry timing, and approval/persist/reject terminal-state expectations.
+- [completed] EXTRACT-003 Add executable backlog slice for asset kernel completion (manifest persistence wiring, binary storage adapter seam, preview linkage, TTL/retention sweep contract, lineage traversal contract).
 
 ## Milestone coverage map
 
@@ -19,6 +20,7 @@
 - MF-006: queue truth materialization for scaffold-stage extraction scope and auditor findings. Status: completed.
 - EXTRACT-001: package metadata + namespace policy finalized for `Chummer.Media.Contracts`; no narrative-authoring or campaign/session DTOs in repo contracts. Status: completed.
 - EXTRACT-002: queue/asset lifecycle invariants documented for dedupe key/scope ownership, retry timing, and approval/persist/reject terminal-state expectations. Status: completed.
+- EXTRACT-003: executable asset-kernel completion slice added for manifest persistence wiring, binary storage adapter seam, preview linkage, TTL/retention sweep contract, and lineage traversal contract. Status: completed.
 
 ## Queue truth
 
