@@ -7,6 +7,12 @@ Contract families:
 - render requests (`Rendering/*`)
 - render job queue state (`Jobs/*`)
 - media asset manifest and lifecycle state (`Assets/*`)
+- manifest store substrate operations (`Kernel/ManifestStoreContracts.cs`)
+- render-job substrate transitions (`Kernel/RenderJobSubstrateContracts.cs`)
+- preview and thumbnail linkage (`Kernel/PreviewLinkContracts.cs`)
+- retention sweep execution contracts (`Kernel/RetentionSweepContracts.cs`)
+- provider-neutral binary adapter contracts (`Storage/*`)
+- deterministic lineage traversal contracts (`Lineage/*`)
 
 Namespace policy:
 

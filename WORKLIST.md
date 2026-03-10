@@ -12,6 +12,7 @@
 - [completed] EXTRACT-004 Define renderer move-in sequence after asset kernel completion: deterministic documents first, portraits second, video third, with dependency gates per stage.
 - [completed] EXTRACT-005 Capture scaffold-stage exit criteria check that proves run-services no longer owns the effective media seam for render-only jobs and asset lifecycle.
 - [completed] EXTRACT-007 Publish runnable asset-kernel implementation backlog (AK-01..AK-06) for manifests, binary storage, render jobs, previews, TTL/retention, and lineage with explicit evidence gates.
+- [completed] EXTRACT-007/AK-01..AK-06 Execute shared asset-kernel contract implementation surfaces for manifest store wiring, binary adapter validation, render-job substrate transitions, preview linkage, TTL/retention sweeps, and lineage traversal evidence.
 - [completed] EXTRACT-008 Publish runnable DTO boundary split backlog (DS-01..DS-05) to keep `Chummer.Media.Contracts` render-only and move narrative/delivery/campaign-context concerns upstream.
 - [completed] EXTRACT-006/SEAM-02 Publish run-services handoff conformance matrix with required ingress payloads and forbidden ownership paths (provider execution, lifecycle mutation authority, queue semantics).
 - [queued] EXTRACT-006 Execute run-services seam cutover backlog (`SEAM-01`..`SEAM-04`) to convert scaffold-stage seam ownership checks into live boundary acceptance evidence and handoff conformance. (`SEAM-02` and `SEAM-04` completed; `SEAM-01` and `SEAM-03` pending)

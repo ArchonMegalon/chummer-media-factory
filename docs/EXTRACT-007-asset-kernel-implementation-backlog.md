@@ -46,3 +46,5 @@ This slice is complete when:
 - runnable AK-01..AK-06 tasks are tracked in queue/worklist artifacts,
 - each task has mapped verification evidence,
 - and queue status can move from queued to completed without adding narrative/delivery/session policy into media-factory contracts.
+
+Execution evidence is tracked in `docs/EXTRACT-007-AK-execution-evidence.md`.
