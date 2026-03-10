@@ -6,19 +6,19 @@ Execute the scaffold-to-live seam cutover so `chummer-media-factory` becomes the
 
 ## Runnable backlog
 
-1. Publish media-factory seam acceptance contract
+1. SEAM-01 Publish media-factory seam acceptance contract
 - Define acceptance checks for intake idempotency, lifecycle terminality, retention transitions, and lineage lookup owned by `Chummer.Media.Contracts`.
 - Record evidence locations and pass/fail criteria so run-services does not remain the semantic source of truth.
 
-2. Add run-services handoff conformance matrix
+2. SEAM-02 Add run-services handoff conformance matrix
 - Enumerate required upstream calls and payloads into media-factory for each media type class.
 - Enumerate forbidden ownership paths in run-services: provider execution, lifecycle mutation authority, and queue semantic definition.
 
-3. Add executable cutover rehearsal checklist
+3. SEAM-03 Add executable cutover rehearsal checklist
 - Run a dry-run sequence covering submit, retry, approval/persist/reject, retention expiry, and signed-URL metadata egress.
 - Capture blocker outputs as follow-on queue items if any seam check fails.
 
-4. Gate renderer move-in on seam evidence
+4. SEAM-04 Gate renderer move-in on seam evidence
 - Require EXTRACT-006 evidence completion before any document/portrait/video execution migration is marked done.
 - Keep renderer migration blocked if seam ownership checks regress.
 

@@ -13,7 +13,7 @@
 - [completed] EXTRACT-005 Capture scaffold-stage exit criteria check that proves run-services no longer owns the effective media seam for render-only jobs and asset lifecycle.
 - [completed] EXTRACT-007 Publish runnable asset-kernel implementation backlog (AK-01..AK-06) for manifests, binary storage, render jobs, previews, TTL/retention, and lineage with explicit evidence gates.
 - [completed] EXTRACT-008 Publish runnable DTO boundary split backlog (DS-01..DS-05) to keep `Chummer.Media.Contracts` render-only and move narrative/delivery/campaign-context concerns upstream.
-- [queued] EXTRACT-006 Execute run-services seam cutover backlog to convert scaffold-stage seam ownership checks into live boundary acceptance evidence and handoff conformance.
+- [queued] EXTRACT-006 Execute run-services seam cutover backlog (`SEAM-01`..`SEAM-04`) to convert scaffold-stage seam ownership checks into live boundary acceptance evidence and handoff conformance.
 
 ## Milestone coverage map
 
@@ -31,7 +31,7 @@
 - EXTRACT-005: scaffold-stage exit criteria check captured with pass/fail evidence gates proving run-services no longer owns render-job and asset-lifecycle seam semantics. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-10 (met). ETA confidence: high. Blockers: none.
 - EXTRACT-007: runnable shared asset-kernel implementation backlog published with execution tasks AK-01..AK-06 and evidence gates before renderer move-in completion. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-10 (met). ETA confidence: high. Blockers: none.
 - EXTRACT-008: runnable DTO split boundary backlog published with execution tasks DS-01..DS-05 and verification gates for render-only contract ownership. Owner: media-factory. Status: completed. Completion: 100%. ETA target date: 2026-03-10 (met). ETA confidence: high. Blockers: none.
-- EXTRACT-006: runnable seam cutover backlog published to enforce live-boundary acceptance evidence, run-services handoff conformance, and rehearsal-gated cutover before renderer migration completion. Owner: media-factory with run-services dependency. Status: queued. Completion: 15%. ETA target date: 2026-03-24. ETA confidence: medium. Blockers: run-services cutover rehearsal windows are not yet confirmed; live-boundary acceptance evidence cannot be finalized until ingress/egress handoff checks are executed.
+- EXTRACT-006: runnable seam cutover backlog published to enforce live-boundary acceptance evidence, run-services handoff conformance, and rehearsal-gated cutover before renderer migration completion. Execution units: `SEAM-01` acceptance contract, `SEAM-02` handoff matrix, `SEAM-03` rehearsal checklist, `SEAM-04` renderer gate enforcement. Owner: media-factory with run-services dependency. Status: queued. Completion: 20%. ETA target date: 2026-03-24. ETA confidence: medium. Blockers: run-services cutover rehearsal windows are not yet confirmed; live-boundary acceptance evidence cannot be finalized until ingress/egress handoff checks are executed.
 
 ## Queue truth
 
@@ -41,5 +41,6 @@
 - Auditor asset-kernel uncovered-scope slice (`project.uncovered_scope`, candidate `22420`, published `2026-03-09` and `2026-03-10`) is mapped to `EXTRACT-007` (AK-01..AK-06) and should not be re-queued as a duplicate generic prompt.
 - Auditor DTO split uncovered-scope slice (`project.uncovered_scope` and `project.queue_exhausted_with_uncovered_scope`, candidates `22419` and `22423`, published `2026-03-09` and `2026-03-10`) is mapped to `EXTRACT-008` (DS-01..DS-05) and should not remain as a duplicate generic prompt.
 - Auditor seam-ownership uncovered-scope slice (`project.uncovered_scope` and `project.queue_exhausted_with_uncovered_scope`, candidates `22421` and `22425`, published `2026-03-09` and `2026-03-10`) is mapped to `EXTRACT-006` and should remain queued until live cutover evidence is complete.
+- Queue prompt `Add milestone mapping or executable queue work for Run-services still owns the effective media seam...` is satisfied by the `EXTRACT-006` mapping and executable units `SEAM-01`..`SEAM-04`; keep the executable units active and treat the generic seam prompt as superseded duplicate scope.
 - Auditor milestone-coverage incomplete slice (`project.milestone_coverage_incomplete`, candidate `22426`, published `2026-03-09` and `2026-03-10`) is satisfied by this explicit coverage map update with completion %, ETA date, confidence, and blockers.
 - Remaining uncovered scope at scaffold stage is being converted into runnable extraction and documentation work from generic auditor prompts.
