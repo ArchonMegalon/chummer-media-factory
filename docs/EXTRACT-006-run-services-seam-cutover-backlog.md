@@ -24,6 +24,24 @@ Execute the scaffold-to-live seam cutover so `chummer-media-factory` becomes the
 - Keep renderer migration blocked if seam ownership checks regress.
 - Evidence: `docs/EXTRACT-006-SEAM-04-renderer-move-in-gate.md`
 
+## Runnable append (2026-03-10)
+
+5. SEAM-01A Draft seam acceptance artifact with executable pass/fail table
+- Create `docs/EXTRACT-006-SEAM-01-seam-acceptance-contract.md` with criteria rows for intake idempotency, lifecycle terminality, retention transitions, and lineage lookup ownership.
+- Include evidence source links, owner, last-checked date, and current state (`pass`/`fail`/`blocked`).
+
+6. SEAM-01B Wire seam acceptance status to queue follow-ons
+- For each `fail` or `blocked` criterion in SEAM-01, append one owner-scoped runnable queue item with explicit next action and evidence target.
+- Keep queue entries scoped to seam ownership only (no narrative/approval-policy expansion).
+
+7. SEAM-03A Publish cutover rehearsal checklist artifact
+- Create `docs/EXTRACT-006-SEAM-03-cutover-rehearsal-checklist.md` with executable checks for submit, retry replay, approval/persist/reject transitions, retention sweep visibility, and signed-URL egress projection.
+- Capture expected evidence sources and blocker capture format for follow-on queue publication.
+
+8. SEAM-03B Execute rehearsal once run-services window is available
+- Run the SEAM-03 checklist end-to-end against the current ingress/egress seam.
+- Record outcomes per check and append blocker-derived queue items for any failed or blocked step.
+
 ## Completion evidence
 
 - Updated seam conformance artifact with explicit pass/fail outcomes.
