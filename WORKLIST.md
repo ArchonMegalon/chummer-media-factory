@@ -11,6 +11,7 @@
 - [completed] EXTRACT-003 Add executable backlog slice for asset kernel completion (manifest persistence wiring, binary storage adapter seam, preview linkage, TTL/retention sweep contract, lineage traversal contract).
 - [completed] EXTRACT-004 Define renderer move-in sequence after asset kernel completion: deterministic documents first, portraits second, video third, with dependency gates per stage.
 - [completed] EXTRACT-005 Capture scaffold-stage exit criteria check that proves run-services no longer owns the effective media seam for render-only jobs and asset lifecycle.
+- [queued] EXTRACT-006 Execute run-services seam cutover backlog to convert scaffold-stage seam ownership checks into live boundary acceptance evidence and handoff conformance.
 
 ## Milestone coverage map
 
@@ -25,9 +26,10 @@
 - EXTRACT-003: executable asset-kernel completion slice added for manifest persistence wiring, binary storage adapter seam, preview linkage, TTL/retention sweep contract, and lineage traversal contract. Status: completed.
 - EXTRACT-004: renderer move-in sequence documented with ordered stage gates: deterministic documents first, portraits second, and video third after dependency checks. Status: completed.
 - EXTRACT-005: scaffold-stage exit criteria check captured with pass/fail evidence gates proving run-services no longer owns render-job and asset-lifecycle seam semantics. Status: completed.
+- EXTRACT-006: runnable seam cutover backlog published to enforce live-boundary acceptance evidence, run-services handoff conformance, and rehearsal-gated cutover before renderer migration completion. Status: queued.
 
 ## Queue truth
 
 - Runtime queue source of truth: `.codex-studio/published/QUEUE.generated.yaml`.
-- Queue items are now normalized as executable backlog statements mapped to MF-005 and extraction sub-slices.
-- Remaining uncovered scope at scaffold stage is represented as runnable extraction and documentation work, not generic auditor prompts.
+- Queue normalization is in progress; generic auditor prompts are being replaced with extraction-scoped runnable backlog entries.
+- Remaining uncovered scope at scaffold stage is being converted into runnable extraction and documentation work from generic auditor prompts.
