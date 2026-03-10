@@ -1,78 +1,87 @@
-# Media-factory review context
+# Generic review checklist
 
-Use this checklist for changes in `chummer-media-factory`.
+Use this review context in every mirrored Chummer code repo.
 
-## 1. Scope and boundary fit
+## 1. Boundary check
 
-Pass only if the change stays inside render execution ownership:
+* Does this change stay inside the repo’s implementation scope?
+* Does it widen ownership into another repo’s area?
+* Does it reintroduce a boundary that was intentionally split out?
 
-* render jobs and job state
-* manifests and binary storage seams
-* previews/thumbnails and signed asset access
-* lifecycle controls (approval, persist, reject, retention, TTL, supersession, lineage)
-* provider adapters for document/image/video rendering
+Reject if:
 
-Fail as P1 if any change introduces:
+* play behavior appears inside presentation
+* workbench behavior appears inside play
+* run-services regrows registry persistence or media execution
+* engine regrows UI or hosted-service authority
+* ui-kit gains domain DTOs or service logic
 
-* narrative authoring, canon generation, lore synthesis, or campaign/session semantics
-* rules math, RuntimeLock concerns, or engine implementation coupling
-* play/presentation UI behavior or UI-kit dependency
-* run-services orchestration ownership inside media-factory
+## 2. Contract check
 
-## 2. DTO and contract integrity
+* Is any cross-repo DTO being added?
+* If yes, is the owning package already defined in `CONTRACT_SETS.yaml`?
+* Is the change consuming a canonical package or copying source?
 
-Pass only if `Chummer.Media.Contracts` remains render-only and package-owned here.
+Reject if:
 
-Fail as P1 if DTOs include or depend on:
+* the change creates a duplicate shared DTO family
+* the change uses an ambiguous or legacy package name when canon is defined
+* the change smuggles engine semantics into play/run wrappers
 
-* campaign/session truth, delivery policy, publication policy, or moderation policy
-* provider SDK types, HTTP framework types, or persistence entities
-* engine/play/presentation implementation models
+## 3. Mirror check
 
-Also fail if any cross-repo contract family is duplicated instead of consumed via canonical package ownership in `CONTRACT_SETS.yaml`.
+* Does `.codex-design/product/*` exist?
+* Does `.codex-design/repo/IMPLEMENTATION_SCOPE.md` exist?
+* Does the mirrored scope match the code being changed?
 
-## 3. Lifecycle state-machine coverage
+Reject if:
 
-Asset lifecycle changes must include explicit handling and verification for:
+* the repo is missing mirrored design context
+* the change contradicts mirrored scope without a corresponding design-repo update
 
-* `approval`
-* `persist`
-* `reject`
+## 4. Milestone check
 
-Fail as P1 if lifecycle transitions are added or altered without full terminal-state coverage, retention/TTL handling, and lineage impact checks.
+* Which milestone is this change serving?
+* Does it unblock or change a published blocker?
+* Does the design repo need an update because sequencing changed?
 
-## 4. Mirror and design sync
+Reject if:
 
-Pass only if local `.codex-design/` remains aligned with approved Chummer design mirrors.
+* the change claims milestone progress but central milestones say otherwise
+* the change silently changes rollout order or package ownership
 
-Fail if:
+## 5. README drift check
 
-* required product/repo/review mirror files are missing
-* local scope or review guidance contradicts mirrored product canon
-* queue/worklist references regress to duplicate generic uncovered-scope prompts already mapped to executable backlog
+* Does the repo README still describe the current architecture?
+* Does the change depend on a README that is known to be stale?
 
-## 5. Queue and uncovered-scope normalization
+Reject if:
 
-For auditor findings `22420` and `22424`, treat generic asset-kernel uncovered-scope prompts as satisfied by `EXTRACT-007` (`AK-01..AK-06`) unless new evidence reopens the slice.
+* a stale README is used as architecture authority over central design
 
-Fail if new queue items reintroduce those exact generic prompts without new blocker evidence.
+## 6. Test and verification check
 
-## 6. Verification expectations
-
-Before completion:
-
-* run `scripts/ai/verify.sh`
-* ensure contract/boundary checks pass
-* ensure queue/worklist state is consistent with completed scope
+* Are the relevant contract or boundary tests updated?
+* If the repo owns a package, is its verification harness updated?
+* If the repo consumes a package, is package-only consumption preserved?
 
 ## 7. Review summary format
 
-Every substantive review should report:
+Every substantive review should answer:
 
 * scope fit: pass/fail
 * boundary fit: pass/fail
 * contract fit: pass/fail
-* lifecycle fit: pass/fail
 * mirror fit: pass/fail
-* queue normalization fit: pass/fail
-* required design follow-up: yes/no
+* milestone fit: pass/fail
+* required design-repo follow-up: yes/no
+
+## 8. Escalate immediately when
+
+* ownership is ambiguous
+* package canon is ambiguous
+* mirror coverage is missing
+* a split boundary is being locally re-merged
+* central design files are obviously stale or contradictory
+
+The fastest safe move in those cases is to fix `chummer-design`, not to guess locally.
