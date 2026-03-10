@@ -58,3 +58,7 @@ If any check fails or becomes blocked in a future run, append one queue follow-o
 - concrete next action
 - evidence target path
 - date recorded (UTC)
+
+## Blocker-derived queue follow-ons (latest run)
+
+- None. `SEAM-03B-2026-03-10T10:25:09Z` had no `fail` or `blocked` checks.
