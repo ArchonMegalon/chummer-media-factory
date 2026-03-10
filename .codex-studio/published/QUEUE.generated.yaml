@@ -1,13 +1,2 @@
 mode: prepend
-items:
-- Add milestone mapping or executable queue work for The asset kernel still needs manifests, binary storage, render jobs, previews, TTL, retention, and lineage before renderer-specific pipelines move here..
-- Publish or append runnable backlog for The asset kernel still needs manifests, binary storage, render jobs, previews, TTL, retention, and lineage before renderer-specific pipelines move here..
-- 'EXTRACT-006/SEAM-01: Publish seam acceptance contract with pass/fail evidence for intake idempotency, lifecycle terminality, retention transitions, and lineage lookup ownership in `Chummer.Media.Contracts`.'
-- 'EXTRACT-006/SEAM-01A: Draft `docs/EXTRACT-006-SEAM-01-seam-acceptance-contract.md` with criterion-level pass/fail/blocked state, evidence links, owner, and last-checked date.'
-- 'EXTRACT-006/SEAM-01B: For every failed or blocked SEAM-01 criterion, append one owner-scoped follow-on queue item with explicit next action and evidence target.'
-- 'EXTRACT-006/SEAM-01B/C3: Owner `media-factory` to execute retention sweep + purge-transition rehearsal during the next run-services seam window; capture pass/fail evidence for retention checks in `docs/EXTRACT-006-SEAM-03-cutover-rehearsal-checklist.md` and update `docs/EXTRACT-006-SEAM-01-seam-acceptance-contract.md` criterion `SEAM-01-C3`.'
-- 'EXTRACT-006/SEAM-03: Execute cutover rehearsal checklist for submit/retry/approval/persist/reject/retention/signed-URL egress and publish blocker-derived follow-on queue items.'
-- 'EXTRACT-006/SEAM-03A: Publish `docs/EXTRACT-006-SEAM-03-cutover-rehearsal-checklist.md` with executable checks and blocker-capture format.'
-- 'EXTRACT-006/SEAM-03B: Execute one rehearsal run when run-services window is available and append blocker-derived queue follow-ons for each failed/blocked check.'
-- 'EXTRACT-006: Execute seam cutover backlog proving `chummer-media-factory` is the effective render-job and asset-lifecycle owner while `chummer.run-services` is limited to orchestration ingress/egress; include conformance matrix, rehearsal checklist, and evidence-gated pass/fail outcomes.'
-- 'EXTRACT-007: Execute shared asset-kernel implementation backlog AK-01..AK-06 for manifest store wiring, binary storage adapter validation, render-job substrate transitions, preview linkage, TTL/retention sweeps, and lineage traversal evidence before renderer-specific migration completion.'
+items: []
