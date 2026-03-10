@@ -1,10 +1,7 @@
 mode: prepend
 items:
 - Add milestone mapping or executable queue work for The asset kernel still needs manifests, binary storage, render jobs, previews, TTL, retention, and lineage before renderer-specific pipelines move here..
-- Finish milestone coverage modeling for media-factory so ETA and completion truth are no longer partial.
-- Add milestone mapping or executable queue work for The repo exists, but `Chummer.Media.Contracts` is not yet real as the canonical render-only package plane..
 - Publish or append runnable backlog for The asset kernel still needs manifests, binary storage, render jobs, previews, TTL, retention, and lineage before renderer-specific pipelines move here..
-- Publish or append runnable backlog for The repo exists, but `Chummer.Media.Contracts` is not yet real as the canonical render-only package plane..
 - 'EXTRACT-006/SEAM-01: Publish seam acceptance contract with pass/fail evidence for intake idempotency, lifecycle terminality, retention transitions, and lineage lookup ownership in `Chummer.Media.Contracts`.'
 - 'EXTRACT-006/SEAM-01A: Draft `docs/EXTRACT-006-SEAM-01-seam-acceptance-contract.md` with criterion-level pass/fail/blocked state, evidence links, owner, and last-checked date.'
 - 'EXTRACT-006/SEAM-01B: For every failed or blocked SEAM-01 criterion, append one owner-scoped follow-on queue item with explicit next action and evidence target.'
