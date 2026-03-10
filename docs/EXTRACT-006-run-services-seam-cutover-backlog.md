@@ -28,4 +28,5 @@ Execute the scaffold-to-live seam cutover so `chummer-media-factory` becomes the
 
 - Updated seam conformance artifact with explicit pass/fail outcomes.
 - Queue entries for any failed criterion with owner and next action.
+- DTO boundary guardrail evidence remains green in `docs/EXTRACT-008-DS-execution-evidence.md` and `scripts/ai/verify.sh`.
 - Worklist status moved from queued to completed only after all checks pass.

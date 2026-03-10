@@ -90,4 +90,5 @@ A seam extraction is considered verified when all are true:
 
 - checklist items A/B/C are complete in PR review
 - `scripts/ai/verify.sh` passes in this repo
+- `docs/EXTRACT-008-DS-execution-evidence.md` remains current for DTO boundary inventory/guardrail evidence
 - no new contract in `Chummer.Media.Contracts` introduces narrative-authoring, campaign/session truth, rules logic, or UI/provider SDK coupling

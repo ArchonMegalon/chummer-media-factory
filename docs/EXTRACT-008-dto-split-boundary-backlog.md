@@ -36,3 +36,5 @@ This slice is complete when:
 - `EXTRACT-008` is present in queue/worklist as the runnable mapping for DTO split uncovered-scope findings,
 - verification enforces render-only DTO boundaries,
 - and no generic DTO-split queue prompt remains as the active implementation task.
+
+Execution evidence: `docs/EXTRACT-008-DS-execution-evidence.md`.
