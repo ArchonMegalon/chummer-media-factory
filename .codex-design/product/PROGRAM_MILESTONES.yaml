@@ -89,6 +89,7 @@ groups:
       worklist_id: WL-D007
       objective: Mirror review-guidance templates into each code repo so review runs against repo-local canon.
       status: queued
+      backlog_ref: products/chummer/sync/REVIEW_TEMPLATE_MIRROR_BACKLOG.md
     - milestone_id: P4
       worklist_id: WL-D008
       objective: Publish approved design mirror subsets into each code repo for worker execution and GitHub review against repo-local canon.

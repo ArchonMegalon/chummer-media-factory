@@ -9,6 +9,7 @@
 - [completed] EXTRACT-001 Finalize `Chummer.Media.Contracts` package metadata and namespace policy; verify render-only DTO boundaries.
 - [completed] EXTRACT-002 Add queue/asset lifecycle invariants doc covering dedupe key/scope ownership, retry timing, and approval/persist/reject terminal-state expectations.
 - [completed] EXTRACT-003 Add executable backlog slice for asset kernel completion (manifest persistence wiring, binary storage adapter seam, preview linkage, TTL/retention sweep contract, lineage traversal contract).
+- [completed] EXTRACT-004 Define renderer move-in sequence after asset kernel completion: deterministic documents first, portraits second, video third, with dependency gates per stage.
 
 ## Milestone coverage map
 
@@ -21,6 +22,7 @@
 - EXTRACT-001: package metadata + namespace policy finalized for `Chummer.Media.Contracts`; no narrative-authoring or campaign/session DTOs in repo contracts. Status: completed.
 - EXTRACT-002: queue/asset lifecycle invariants documented for dedupe key/scope ownership, retry timing, and approval/persist/reject terminal-state expectations. Status: completed.
 - EXTRACT-003: executable asset-kernel completion slice added for manifest persistence wiring, binary storage adapter seam, preview linkage, TTL/retention sweep contract, and lineage traversal contract. Status: completed.
+- EXTRACT-004: renderer move-in sequence documented with ordered stage gates: deterministic documents first, portraits second, and video third after dependency checks. Status: completed.
 
 ## Queue truth
 
