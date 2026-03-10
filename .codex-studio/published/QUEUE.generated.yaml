@@ -1,24 +1,9 @@
 mode: append
 items:
-- Add milestone mapping or executable queue work for The repo exists, but `Chummer.Media.Contracts`
-  is not yet real as the canonical render-only package plane..
-- Publish or append runnable backlog for The repo exists, but `Chummer.Media.Contracts`
-  is not yet real as the canonical render-only package plane..
-- Finish milestone coverage modeling for media-factory so ETA and completion truth
-  are no longer partial.
-- Add milestone mapping or executable queue work for Media DTOs still need to be split
-  cleanly between downstream render/job/asset lifecycle contracts and upstream narrative-authoring,
-  delivery, and campaign-context contracts..
-- Publish or append runnable backlog for Media DTOs still need to be split cleanly
-  between downstream render/job/asset lifecycle contracts and upstream narrative-authoring,
-  delivery, and campaign-context contracts..
-- Add milestone mapping or executable queue work for The asset kernel still needs
-  manifests, binary storage, render jobs, previews, TTL, retention, and lineage before
-  renderer-specific pipelines move here..
-- Publish or append runnable backlog for The asset kernel still needs manifests, binary
-  storage, render jobs, previews, TTL, retention, and lineage before renderer-specific
-  pipelines move here..
-- Add milestone mapping or executable queue work for Run-services still owns the effective
-  media seam, so this repo is scaffold-stage rather than a live render-only boundary..
-- Publish or append runnable backlog for Run-services still owns the effective media
-  seam, so this repo is scaffold-stage rather than a live render-only boundary..
+- "MF-005: Write service seam doc that defines media-factory ownership vs upstream ownership in `chummer.run-services` and downstream consumers (`hub-registry`, `presentation`, `play`). Include explicit out-of-scope rules/session relay/lore/provider-routing exclusions."
+- "MF-005: Add an integration handoff checklist for render request ingress, approval-state persistence handoff, and asset metadata egress so seam ownership can be verified during extraction."
+- "EXTRACT-001: Finalize `Chummer.Media.Contracts` package metadata and namespace policy as the canonical render-only contract plane; verify no narrative-authoring or campaign/session context DTOs exist in this repo."
+- "EXTRACT-002: Add queue/asset lifecycle invariants doc covering dedupe key/scope ownership, retry timing, and approval/persist/reject terminal-state expectations."
+- "EXTRACT-003: Add executable backlog slice for asset kernel completion (manifest persistence wiring, binary storage adapter seam, preview linkage, TTL/retention sweep contract, lineage traversal contract)."
+- "EXTRACT-004: Define renderer move-in sequence after asset kernel completion: deterministic documents first, portraits second, video third, with dependency gates per stage."
+- "EXTRACT-005: Capture scaffold-stage exit criteria check that proves run-services no longer owns the effective media seam for render-only jobs and asset lifecycle."
