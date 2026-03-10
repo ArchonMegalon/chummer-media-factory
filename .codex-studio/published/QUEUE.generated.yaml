@@ -1,7 +1,7 @@
 mode: prepend
 items:
 - 'EXTRACT-006: Execute seam cutover backlog proving `chummer-media-factory` is the effective render-job and asset-lifecycle owner while `chummer.run-services` is limited to orchestration ingress/egress; include conformance matrix, rehearsal checklist, and evidence-gated pass/fail outcomes.'
-- Publish or append runnable backlog for The asset kernel still needs manifests, binary storage, render jobs, previews, TTL, retention, and lineage before renderer-specific pipelines move here..
+- 'EXTRACT-007: Execute shared asset-kernel implementation backlog AK-01..AK-06 for manifest store wiring, binary storage adapter validation, render-job substrate transitions, preview linkage, TTL/retention sweeps, and lineage traversal evidence before renderer-specific migration completion.'
 - Add milestone mapping or executable queue work for The asset kernel still needs manifests, binary storage, render jobs, previews, TTL, retention, and lineage before renderer-specific pipelines move here..
 - Publish or append runnable backlog for Media DTOs still need to be split cleanly between downstream render/job/asset lifecycle contracts and upstream narrative-authoring, delivery, and campaign-context contracts..
 - Add milestone mapping or executable queue work for Media DTOs still need to be split cleanly between downstream render/job/asset lifecycle contracts and upstream narrative-authoring, delivery, and campaign-context contracts..
