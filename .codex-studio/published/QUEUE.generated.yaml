@@ -1,7 +1,6 @@
 mode: prepend
 items:
 - 'EXTRACT-006/SEAM-01: Publish seam acceptance contract with pass/fail evidence for intake idempotency, lifecycle terminality, retention transitions, and lineage lookup ownership in `Chummer.Media.Contracts`.'
-- 'EXTRACT-006/SEAM-02: Publish run-services handoff conformance matrix enumerating required ingress payloads and forbidden ownership paths (provider execution, lifecycle mutation authority, queue semantics) in run-services.'
 - 'EXTRACT-006/SEAM-03: Execute cutover rehearsal checklist for submit/retry/approval/persist/reject/retention/signed-URL egress and publish blocker-derived follow-on queue items.'
 - 'EXTRACT-006/SEAM-04: Enforce renderer move-in gate so document/portrait/video migration cannot complete until seam evidence is passing and non-regressed.'
 - 'EXTRACT-006: Execute seam cutover backlog proving `chummer-media-factory` is the effective render-job and asset-lifecycle owner while `chummer.run-services` is limited to orchestration ingress/egress; include conformance matrix, rehearsal checklist, and evidence-gated pass/fail outcomes.'

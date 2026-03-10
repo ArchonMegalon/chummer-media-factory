@@ -27,6 +27,7 @@ Bootstrap layout:
 - `src/Chummer.Media.Contracts` is the canonical render-only package plane scaffold
 - `scripts/ai/verify.sh` restores and builds the bootstrap in isolation
 - `docs/MF-005-service-seams-and-handoffs.md` defines cross-service seam ownership and extraction checklist coverage
+- `docs/EXTRACT-006-SEAM-02-run-services-handoff-conformance-matrix.md` defines required ingress payloads and forbidden run-services ownership paths for seam cutover
 
 `Chummer.Media.Contracts` now owns only three contract families:
 

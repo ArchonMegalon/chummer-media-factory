@@ -13,6 +13,7 @@ Execute the scaffold-to-live seam cutover so `chummer-media-factory` becomes the
 2. SEAM-02 Add run-services handoff conformance matrix
 - Enumerate required upstream calls and payloads into media-factory for each media type class.
 - Enumerate forbidden ownership paths in run-services: provider execution, lifecycle mutation authority, and queue semantic definition.
+- Evidence: `docs/EXTRACT-006-SEAM-02-run-services-handoff-conformance-matrix.md`
 
 3. SEAM-03 Add executable cutover rehearsal checklist
 - Run a dry-run sequence covering submit, retry, approval/persist/reject, retention expiry, and signed-URL metadata egress.
