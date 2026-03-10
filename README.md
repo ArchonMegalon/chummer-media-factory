@@ -19,7 +19,7 @@ This repo must not own:
 - provider routing
 - narrative generation policy
 
-Current status: scaffold-stage bootstrap. Contract-plane and render-only DTO extraction are still in progress.
+Current status: scaffold-stage bootstrap. `Chummer.Media.Contracts` is now established as the canonical render-only contract plane for this repo, with package metadata and namespace policy checks in verification.
 
 Bootstrap layout:
 
